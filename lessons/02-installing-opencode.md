@@ -35,6 +35,8 @@ Not sure which chip you have? Click the Apple menu () > "About This Mac" — it'
 
 Download the Windows installer from [opencode.ai/download](https://opencode.ai/download) and run it. Follow the on-screen prompts to complete the installation.
 
+For Windows users, we recommend installing **Windows Subsystem for Linux (WSL)**. WSL lets you run a full Linux environment directly inside Windows. It's free, built into Windows 10 and 11, and takes just one command to install. See [Windows (WSL) documentation](https://opencode.ai/docs/windows-wsl).
+
 **Linux**
 
 Download the package for your distribution from [opencode.ai/download](https://opencode.ai/download):
@@ -56,12 +58,12 @@ That's it — OpenCode is installed and ready to go.
 
 If you run into issues, check the [OpenCode troubleshooting guide](https://opencode.ai/docs/troubleshooting/) or ask for help on the [OpenCode Discord](https://opencode.ai/discord).
 
-## What about the other interfaces?
+## Other OpenCode interfaces?
 
 For reference, here are the other ways to use OpenCode. You don't need any of these for this course, but they're good to know about:
 
 - **Terminal (TUI)** — A full chat interface that runs inside your terminal. Popular with developers who prefer keyboard-driven workflows. Install with `curl -fsSL https://opencode.ai/install | bash`.
 - **CLI** — For running one-off commands like `opencode run "explain this function"`. Same installation as the TUI.
-- **IDE extensions** — Available for [VS Code](https://marketplace.visualstudio.com), [Cursor](https://cursor.com), [Zed](https://zed.dev), and [Windsurf](https://codeium.com/windsurf). Install from your editor's extension marketplace.
+- **IDE extensions** — Available for [VS Code](https://marketplace.visualstudio.com), [Cursor](https://cursor.com), [Zed](https://zed.dev), and [Windsurf](https://windsurf.com/editor). Install from your editor's extension marketplace.
 
-All of these share the same underlying engine and [configuration](/glossary#config), so anything you learn in this course applies across interfaces.
+All of these share the same underlying engine and [configuration](/glossary#config), so most of the things you learn in this course apply across interfaces.
