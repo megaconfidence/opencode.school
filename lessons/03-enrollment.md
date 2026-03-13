@@ -7,24 +7,15 @@ order: 3
 
 Now that you've got OpenCode installed, let's put it to work.
 
-## Get your student ID
+We've generated a student ID for you, which you'll use to enroll in OpenCode School and track your progress: This will allow you to mark lessons complete from both the website and OpenCode, and keep your progress in sync.
 
-Visit [opencode.school/enroll](https://opencode.school/enroll) to get your unique student ID. It will look something like `curious-hacker-2019` — a randomly generated name that's unique to you.
+TODO: Show stylized Student ID card here.
 
-Copy your student ID. You'll need it in the next step.
 
-## Enroll from OpenCode
-
-Open OpenCode Desktop and type the following message, replacing `<your-student-id>` with the ID you just received:
+Open OpenCode Desktop and type the following message:
 
 ```
-Let's enroll in OpenCode School! My student id is <your-student-id>
-```
-
-For example:
-
-```
-Let's enroll in OpenCode School! My student id is curious-hacker-2019
+Let's enroll in https://opencode.school! My student id is <your-student-id>
 ```
 
 Press Enter and let OpenCode handle the rest. It will register your enrollment and mark this lesson as complete.
@@ -42,4 +33,4 @@ Your progress syncs between the website and your OpenCode app, so you can pick u
 
 You just used OpenCode for the first time! You typed a [prompt](/glossary#prompt) — a plain-English instruction — and OpenCode acted on it. That's the core of how OpenCode works: you describe what you want, and the [agent](/glossary#agent) figures out how to do it.
 
-In the next lesson, we'll set up a configuration file that tells OpenCode how to behave across all your projects.
+In the next lesson, we'll set up a configuration file that tells OpenCode how to behave across all your projects, so you can customize it to your preferences. But for now, take a moment to celebrate your first successful interaction with OpenCode! You've just taken the first step towards mastering this powerful tool.
