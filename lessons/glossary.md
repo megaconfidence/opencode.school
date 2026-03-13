@@ -28,6 +28,14 @@ Short for configuration. A file (usually `opencode.jsonc`) where you define pref
 
 **Graphical User Interface.** A visual interface with windows, buttons, and menus that you interact with using a mouse and keyboard. OpenCode Desktop is a GUI. Compare with [TUI](#tui) and [CLI](#cli).
 
+## LLM
+
+**Large Language Model.** A type of AI that works like a fancy version of autocomplete — it takes existing text and guesses the next likely words to follow it. Feed it the beginning of a sentence and it predicts how to continue. Feed it a question and it predicts what an answer would look like. Feed it code with a bug and it predicts what a fix would look like.
+
+LLMs are trained on vast amounts of text and code from the internet, which is how they "learn" patterns of language, reasoning, and programming. They power tools like OpenCode — when you type a [prompt](#prompt), it's an LLM that reads it and generates a response. Examples include Claude (by Anthropic), GPT (by OpenAI), and Gemini (by Google).
+
+For a deeper understanding of how LLMs work, watch [Intro to Large Language Models](https://www.youtube.com/watch?v=7xTGNNLPyMI) by Andrej Karpathy — a clear, non-technical explainer covering how these models are built, how to think about them, and how to get the most out of them.
+
 ## MCP
 
 **Model Context Protocol.** An open standard that lets OpenCode connect to external tools and services. For example, you can add an MCP server that gives OpenCode access to your GitHub issues, Sentry error logs, or documentation search. MCP servers can be local (running on your machine) or remote (hosted on the internet).
