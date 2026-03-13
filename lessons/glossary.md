@@ -36,6 +36,14 @@ LLMs are trained on vast amounts of text and code from the internet, which is ho
 
 For a deeper understanding of how LLMs work, watch [Intro to Large Language Models](https://www.youtube.com/watch?v=7xTGNNLPyMI) by Andrej Karpathy — a clear, non-technical explainer covering how these models are built, how to think about them, and how to get the most out of them.
 
+## Markdown
+
+A plaintext format preferred by developers for writing content. Unlike formats tied to specific programs (like `.docx` for Microsoft Word or `.pages` for Apple Pages), Markdown is lightweight and not associated with any particular program, company, or technology. Files end in `.md` and use simple characters for formatting: `#` for headings, `**` for bold, `- ` for bullet lists, and `[text](url)` for links.
+
+Markdown is also the preferred text format used by [LLMs](#llm) — both for reading input and generating output. Many of the files you'll work with in OpenCode are Markdown, including [AGENTS.md](#agentsmd) and the lesson files in this course.
+
+To learn the Markdown format interactively, check out [Markdown Live Preview](https://markdownlivepreview.com/).
+
 ## MCP
 
 **Model Context Protocol.** An open standard that lets OpenCode connect to external tools and services. For example, you can add an MCP server that gives OpenCode access to your GitHub issues, Sentry error logs, or documentation search. MCP servers can be local (running on your machine) or remote (hosted on the internet).
