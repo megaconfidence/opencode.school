@@ -6,6 +6,12 @@
   "assets": {
     "directory": "./dist"
   },
+  "r2_buckets": [
+    {
+      "binding": "ASSETS_BUCKET",
+      "bucket_name": "opencodeschool-assets"
+    }
+  ],
   "kv_namespaces": [
     {
       "binding": "PROGRESS",
