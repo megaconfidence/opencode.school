@@ -11,7 +11,9 @@ export function GET(context: APIContext) {
 	return rss({
 		title: "OpenCode School Changelog",
 		description: "What's new on OpenCode School.",
-		site: context.site?.toString() ?? "https://opencode.school",
+		// `context.site` always comes from `astro.config.mjs`, which now reads
+		// SITE_URL from wrangler.jsonc. The fallback is just to satisfy types.
+		site: context.site?.toString() ?? "/",
 		items: changelogEntries.map((entry) => ({
 			title: entry.title,
 			description: entry.description,

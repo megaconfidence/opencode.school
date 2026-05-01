@@ -4,7 +4,18 @@
   "compatibility_date": "2026-03-12",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+  },
+  // Public, non-secret values read by `astro.config.mjs` at build time and
+  // inlined into the prerendered HTML.
+  //   - SITE_URL drives canonical URLs, OG image URLs, the sitemap, and the
+  //     RSS feed. Change this when deploying to a different domain.
+  //   - AI_SEARCH_API_URL is the Cloudflare AI Search instance the search
+  //     widget queries. Manage the instance at:
+  //       https://dash.cloudflare.com/?to=/:account/ai/ai-search
+  "vars": {
+    "SITE_URL": "https://opencodeschool.conflare.workers.dev",
+    "AI_SEARCH_API_URL": "https://b2003c29-236c-4271-a658-54d0ab255dfb.search.ai.cloudflare.com",
   },
   // The R2 bucket and KV namespace below are for the production deployment.
   // You only need these if you're deploying to your own Cloudflare account.
@@ -12,23 +23,23 @@
   "r2_buckets": [
     {
       "binding": "ASSETS_BUCKET",
-      "bucket_name": "opencodeschool-assets"
-    }
+      "bucket_name": "opencodeschool-assets",
+    },
   ],
   "kv_namespaces": [
     {
       "binding": "PROGRESS",
-      "id": "8ff29749cd3f4b95ba6245727b7ba5e0"
-    }
+      "id": "ef33b4b6ae0f4b80916d91445154380e",
+    },
   ],
   "env": {
     "production": {
       "routes": [
         {
           "pattern": "opencode.school",
-          "custom_domain": true
-        }
-      ]
-    }
-  }
+          "custom_domain": true,
+        },
+      ],
+    },
+  },
 }
